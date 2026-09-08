@@ -1,0 +1,21 @@
+{
+ "objetivo_kwh": 120.0,
+ "promedio_vecinos_kwh": 270.4,
+ "n_vecinos": 11,
+ "diferencia_pct": -61.54,
+ "dias_transcurridos": 29,
+ "dias_objetivo_consumidos": 25.1333,
+ "texto_dinamico": "bajo_ritmo",
+ "excedente_kwh": null,
+ "consumo_ultimo_dia_kwh": 3.28,
+ "consumo_diario_objetivo_kwh": 4.1379,
+ "consumo_acumulado_kwh": 104.0,
+ "consumo_promedio_diario_kwh": 3.59,
+ "proyeccion": {
+  "mes": "2026-01-01",
+  "metodo_aplicado": "periodo_cerrado",
+  "bandera_confianza": "alta",
+  "rango_inferior_kwh": 104.0,
+  "rango_superior_kwh": 104.0
+ }
+}

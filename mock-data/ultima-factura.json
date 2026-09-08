@@ -1,0 +1,27 @@
+{
+ "periodo": {
+  "id": "2026-08",
+  "lectura_anterior": "2026-06-12",
+  "lectura_desde": "2026-06-13",
+  "lectura_hasta": "2026-07-11",
+  "dias": 29,
+  "kwh": 107.0,
+  "kwh_por_dia": 3.69,
+  "importe": 85548.8,
+  "vencimiento": "2026-09-07",
+  "impaga": true,
+  "etiqueta": "13 jun – 11 jul 2026",
+  "emision": "2026-08-24",
+  "de_otro_titular": false
+ },
+ "interanual": {
+  "disponible": true,
+  "motivo": null,
+  "contrato_desde": "2026-06-08",
+  "kwh": 193.0,
+  "dias": 29,
+  "variacion_pct_por_dia": -44.6,
+  "de_otro_titular": false
+ },
+ "otras_impagas": 0
+}

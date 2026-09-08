@@ -1,0 +1,12 @@
+{
+  "mes_actual_kwh": 277.0,
+  "mes_anterior_kwh": 292.0,
+  "mes_ano_anterior_kwh": 225.0,
+  "dia_mas_alto_kwh": 14.0,
+  "dia_mas_bajo_kwh": 6.0,
+  "promedio_diario_kwh": 11.1,
+  "comparacion_acumulada_vecinos_pct": 5.2,
+  "promedio_acumulado_vecinos_kwh": 263.4,
+  "comparacion_diaria_vecinos_pct": 5.2,
+  "promedio_diario_vecinos_kwh": 10.5
+}

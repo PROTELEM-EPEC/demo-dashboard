@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- El token del QR viaja en la URL hasta que `hooks/tokenPublico` lo canjea.
+         Los navegadores modernos ya mandan solo el origen a otro sitio, pero esta
+         pantalla tiene enlaces salientes al portal de pago y no todos los clientes
+         se comportan igual. Cuesta una linea. -->
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPEC — Plataforma de Clientes</title>
+    <!-- Corriente — Instrument Sans (display) + Inter (UI) + Chivo Mono (cifras).
+         Chivo Mono se eligió por el cero SIN punto ni barra: los números de
+         suministro y los códigos OBIS se dictan por teléfono y se transcriben a
+         mano, y un cero marcado se lee como otro carácter. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&family=Chivo+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/main-DZuDg32g.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-KkkCF0_4.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+  </body>
+</html>

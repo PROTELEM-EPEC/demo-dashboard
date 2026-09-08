@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+    <!-- El token del QR viaja en la URL hasta que `hooks/tokenPublico` lo canjea.
+         Los navegadores modernos ya mandan solo el origen a otro sitio, pero esta
+         pantalla tiene enlaces salientes al portal de pago y no todos los clientes
+         se comportan igual. Cuesta una linea. -->
+    <meta name="referrer" content="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tu factura EPEC</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f4f1ec;
+    color: #1c1410;
+  }
+  .barra { background: #124e2f; color: #fff; padding: 14px 20px; display: flex; align-items: center; gap: 12px; }
+  .barra img { height: 28px; }
+  .barra span { font-size: 13px; letter-spacing: .05em; opacity: .85; }
+  /* El ancho de la hoja A4 (794px) manda: en escritorio la factura se ve 1:1. */
+  main { max-width: 834px; margin: 0 auto; padding: 24px 20px 48px; }
+
+  /* La barra de acciones envuelve: a 390px el botón y el anuncio no entran en
+     una línea, y el anuncio es un nodo de texto que envolvería por su cuenta. */
+  .acciones {
+    max-width: 794px; margin: 0 auto 14px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  }
+  .boton-girar {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 44px; padding: 0 20px;
+    background: #fff; color: #124e2f;
+    border: 1px solid #dcd6ca; border-radius: 10px;
+    font-family: inherit; font-size: 14px; font-weight: 600;
+    cursor: pointer;
+  }
+  .boton-girar:hover { background: #f0ece4; }
+  .boton-girar:focus-visible { outline: 2px solid #124e2f; outline-offset: 2px; }
+  .anuncio { margin: 0; font-size: 13px; color: #6b6155; min-width: 0; }
+
+  /* Las dos caras de la hoja rediseñada viven en su propio documento
+     (public/diseno-factura/). Van en iframes a propósito: cada una trae su CSS,
+     sus @font-face y su @page A4, y embeberlas inline les pisaría los estilos a
+     esta página. Así se actualizan copiando el archivo de nuevo.
+     La única edición sobre el frente es el href del QR — ver README-embebido.md. */
+  .factura-lienzo {
+    position: relative;
+    max-width: 794px; margin: 0 auto;
+    aspect-ratio: 794 / 1123;   /* alto = ancho de la hoja escalado */
+    perspective: 1800px;
+  }
+  .giro {
+    position: absolute; inset: 0;
+    transform-style: preserve-3d;
+    transition: transform 720ms cubic-bezier(.2, .7, .2, 1);
+  }
+  .giro[data-cara="dorso"] { transform: rotateY(180deg); }
+  /* `overflow: hidden` es lo que evita el desborde horizontal en un teléfono: el
+     iframe mide 794px de layout aunque se lo escale, porque `transform` no
+     cambia la caja. Acá se lo recorta contra el ancho real del lienzo. */
+  .cara {
+    position: absolute; inset: 0;
+    overflow: hidden;
+    border-radius: 16px; background: #fff;
+    box-shadow: 0 8px 32px rgba(180,140,80,.12), 0 2px 8px rgba(100,80,60,.08);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .cara-dorso { transform: rotateY(180deg); }
+  /* La cara de atrás se apaga de verdad cuando el giro terminó.
+     `backface-visibility` es pintura —WebKit la ignora sobre un iframe— y el
+     iframe de atrás seguiría siendo destino de scroll y de Tab. Durante el giro
+     el script las deja vivas a las dos: si no, no habría nada que ver rotando. */
+  .cara[aria-hidden="true"] { visibility: hidden; }
+  .cara iframe {
+    display: block; width: 794px; height: 1123px; border: 0;
+    transform-origin: top left;   /* el factor lo fija el script de abajo */
+  }
+
+  /* Con `reduce` el giro se cambia por un fundido: la hoja cambia de cara sin
+     rotar. `transform: none` en las dos, o el dorso queda espejado. */
+  @media (prefers-reduced-motion: reduce) {
+    .giro,
+    .giro[data-cara="dorso"],
+    .cara-dorso { transform: none; transition: opacity 160ms linear; }
+    .cara[aria-hidden="true"] { opacity: 0; }
+  }
+
+  .pie { max-width: 794px; margin: 14px auto 0; }
+  .pie p { margin: 0 0 8px; }
+  .nota { font-size: 13px; color: #6b6155; line-height: 1.55; }
+  .pie a { font-size: 13px; color: #124e2f; }
+
+  /* Imprimir es otra cosa que girar. Las dos caras salen una debajo de la otra,
+     sin rotar y sin recortar, y cada hoja ocupa su página: eso es el dúplex que
+     va a la imprenta. Hay que deshacer las tres cosas que sostienen el giro
+     —la perspectiva, el `position: absolute` de las caras y el `scale` del
+     iframe—, y volver a encender la cara que el gesto había apagado. */
+  @media print {
+    body { background: #fff; }
+    .barra, .acciones, .pie { display: none; }
+    main { max-width: none; padding: 0; }
+    .factura-lienzo {
+      max-width: none; aspect-ratio: auto; height: auto; perspective: none;
+    }
+    .giro {
+      position: static; height: auto;
+      transform: none !important; transform-style: flat;
+    }
+    .cara {
+      position: static; overflow: visible;
+      width: 794px; height: 1123px;
+      transform: none !important;
+      /* La cara de atrás está apagada por `[aria-hidden]`: acá se enciende. */
+      visibility: visible !important; opacity: 1 !important;
+      -webkit-backface-visibility: visible; backface-visibility: visible;
+      border-radius: 0; box-shadow: none;
+    }
+    .cara-frente { break-after: page; page-break-after: always; }
+    .cara iframe { transform: none !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="barra">
+    <img src="./epec-logo-blanco-solido.png" alt="EPEC" />
+    <span>Factura digital</span>
+  </div>
+
+  <main>
+    <div class="acciones">
+      <button id="girar" type="button" class="boton-girar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h7v16H4z" /><path d="M13 6l7 3-7 3" /><path d="M20 9v11h-7" />
+        </svg>
+        <span id="girar-texto">Ver dorso</span>
+      </button>
+      <p id="anuncio" class="anuncio" role="status" aria-live="polite">
+        Estás viendo el frente de tu factura.
+      </p>
+    </div>
+
+    <div class="factura-lienzo">
+      <div id="giro" class="giro" data-cara="frente">
+        <div id="cara-frente" class="cara cara-frente" aria-hidden="false">
+          <iframe src="diseno-factura/residencial-comun.html"
+                  title="El frente de tu factura"
+                  scrolling="no"></iframe>
+        </div>
+        <div id="cara-dorso" class="cara cara-dorso" aria-hidden="true">
+          <!-- Sin `src` hasta el primer giro: son ~80 KB de fuentes en base64 que
+               no se pagan en la primera pintura. Lo pone el script. -->
+          <iframe title="El dorso de tu factura — qué podés hacer en tu tablero"
+                  scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie">
+      <p class="nota">Escaneá o tocá el QR de la factura para abrir tu tablero. Vas a ver los datos
+         básicos; para el análisis completo se te pedirá ingresar a tu cuenta de EPEC.</p>
+      <p><a href="diseno-factura/residencial-comun.html" target="_blank" rel="noopener">Abrir la factura sola, para imprimir o guardar en PDF</a></p>
+      <p><a href="diseno-factura/dorso.html" target="_blank" rel="noopener">Abrir el dorso solo</a></p>
+    </div>
+  </main>
+
+<script>
+  // El mismo gesto que el modal de «Mi Factura», en la superficie standalone.
+  // Las dos las afirma `backend/scripts/dorso-check.mjs`.
+  (function () {
+    var lienzo = document.querySelector('.factura-lienzo');
+    var giro = document.getElementById("giro");
+    var caraFrente = document.getElementById('cara-frente');
+    var caraDorso = document.getElementById('cara-dorso');
+    var boton = document.getElementById('girar');
+    var textoBoton = document.getElementById('girar-texto');
+    var anuncio = document.getElementById('anuncio');
+    if (!lienzo || !giro || !boton) return;
+
+    var marcoDorso = caraDorso.querySelector('iframe');
+    var GIRO_MS = 800;   // el giro dura 720ms; se limpia con margen
+    var temporizador = null;
+
+    // La hoja mide 794x1123 fijos (A4 a 96dpi). Cuando la pantalla es más angosta
+    // se escala entera, en vez de recortarla o dejar que el iframe scrollee: el
+    // alto lo resuelve el aspect-ratio del lienzo, acá sólo va el factor.
+    function ajustar() {
+      var factor = lienzo.clientWidth / 794;
+      var marcos = lienzo.querySelectorAll('iframe');
+      for (var i = 0; i < marcos.length; i++) {
+        marcos[i].style.transform = 'scale(' + factor + ')';
+      }
+    }
+    ajustar();
+    addEventListener('resize', ajustar);
+
+    var ROTULOS = {
+      frente: { boton: 'Ver dorso', anuncio: 'Estás viendo el frente de tu factura.' },
+      dorso: { boton: 'Ver el frente', anuncio: 'Estás viendo el dorso: qué podés hacer en tu tablero.' }
+    };
+
+    // El dorso recién se trae cuando hace falta, y una sola vez.
+    function cargarDorso() {
+      if (marcoDorso.getAttribute('src')) return;
+      marcoDorso.setAttribute('src', 'diseno-factura/dorso.html');
+      marcoDorso.style.transform = 'scale(' + (lienzo.clientWidth / 794) + ')';
+    }
+
+    // Sin esto, imprimir sin haber girado nunca deja la segunda página en blanco:
+    // la carga diferida y el dúplex tiran para lados opuestos, y gana el papel.
+    addEventListener('beforeprint', cargarDorso);
+
+    // «Descargar PDF» desde el tablero abre esta página con `?imprimir=1`.
+    //
+    // No hay librería de PDF: el registry de npm está cortado por el proxy, así
+    // que jsPDF y compañía no se pueden instalar. Lo que sí hay es el diálogo de
+    // impresión del navegador, y esta página ya sabe sacar las dos caras en dos
+    // hojas A4 (el `@media print` de arriba). Así que «descargar» es abrir ese
+    // diálogo con todo listo para que la persona elija «Guardar como PDF».
+    //
+    // Hay que ESPERAR a que las dos hojas terminen de cargar: `print()` sobre un
+    // iframe a medio pintar sale en blanco, y el dorso recién arranca su descarga
+    // en esta misma función.
+    (function () {
+      var params = new URLSearchParams(location.search);
+      if (params.get('imprimir') !== '1') return;
+      cargarDorso();
+
+      var marcos = [caraFrente.querySelector('iframe'), marcoDorso];
+      var faltan = marcos.length;
+      var listo = false;
+      function tal_vez_imprimir() {
+        if (listo) return;
+        listo = true;
+        // `requestAnimationFrame` doble: el layout de la hoja recién insertada
+        // tiene que haber pintado antes de que el navegador la mande al PDF.
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { print(); });
+        });
+      }
+      marcos.forEach(function (m) {
+        if (m.contentDocument && m.contentDocument.readyState === 'complete') {
+          if (--faltan === 0) tal_vez_imprimir();
+          return;
+        }
+        m.addEventListener('load', function () {
+          if (--faltan === 0) tal_vez_imprimir();
+        });
+      });
+      // Red de seguridad: si un `load` no llega —una caché rara, una hoja que ya
+      // estaba— igual se imprime. Mejor un diálogo de más que uno que no abre.
+      setTimeout(tal_vez_imprimir, 3000);
+    })();
+
+    boton.addEventListener('click', function () {
+      var destino = giro.dataset.cara === 'frente' ? 'dorso' : 'frente';
+
+      if (destino === 'dorso') cargarDorso();
+
+      // Mientras dura el giro las dos caras están vivas; al terminar, la de atrás
+      // vuelve a apagarse por CSS.
+      caraFrente.style.visibility = 'visible';
+      caraDorso.style.visibility = 'visible';
+
+      giro.dataset.cara = destino;
+      caraFrente.setAttribute('aria-hidden', destino === 'frente' ? 'false' : 'true');
+      caraDorso.setAttribute('aria-hidden', destino === 'dorso' ? 'false' : 'true');
+      textoBoton.textContent = ROTULOS[destino].boton;
+      anuncio.textContent = ROTULOS[destino].anuncio;
+
+      clearTimeout(temporizador);
+      temporizador = setTimeout(function () {
+        caraFrente.style.visibility = '';
+        caraDorso.style.visibility = '';
+      }, GIRO_MS);
+    });
+  })();
+</script>
+</body>
+</html>

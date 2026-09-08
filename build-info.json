@@ -1,0 +1,7 @@
+{
+  "source_commit": "05aa88c",
+  "source_branch": "develop",
+  "built_at": "2026-09-08T11:12:48Z",
+  "base": "./ (relativa)",
+  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/. No es un entorno productivo ni refleja el estado actual de ningun cliente."
+}
