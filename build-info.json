@@ -1,7 +1,8 @@
 {
-  "source_commit": "05aa88c",
+  "source_commit": "108b476",
   "source_branch": "develop",
-  "built_at": "2026-09-08T11:12:48Z",
+  "built_at": "2026-09-08T11:45:00Z",
   "base": "./ (relativa)",
-  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/. No es un entorno productivo ni refleja el estado actual de ningun cliente."
+  "anonimizado": true,
+  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/, con titular/direccion/identificadores anonimizados via scripts/anonimizar_demo_publica.py. No es un entorno productivo ni refleja el estado actual de ningun cliente."
 }
