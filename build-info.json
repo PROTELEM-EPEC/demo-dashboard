@@ -1,8 +1,8 @@
 {
-  "source_commit": "e4c171a",
+  "source_commit": "e15a225",
   "source_branch": "demo-publica-factura-extra (desde develop @108b476)",
-  "built_at": "2026-09-09T12:00:00Z",
+  "built_at": "2026-09-09T12:15:00Z",
   "base": "./ (relativa)",
   "anonimizado": true,
-  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/, con titular/direccion/identificadores anonimizados via scripts/anonimizar_demo_publica.py. Suma ademas el periodo 2026-07 (pagado en el snapshot real) como una segunda factura pendiente, mockeada a pedido explicito. No es un entorno productivo ni refleja el estado actual de ningun cliente."
+  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/, con titular/direccion/identificadores anonimizados via scripts/anonimizar_demo_publica.py. Suma ademas el periodo 2026-07 (pagado en el snapshot real) como una segunda factura pendiente, mockeada a pedido explicito. Fix incluido: la hoja de 'Tu factura' ahora respeta cual de las dos facturas esta seleccionada (antes siempre mostraba la de 08/2026). No es un entorno productivo ni refleja el estado actual de ningun cliente."
 }
