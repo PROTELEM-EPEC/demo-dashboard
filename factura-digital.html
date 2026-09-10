@@ -186,6 +186,21 @@
     var GIRO_MS = 800;   // el giro dura 720ms; se limpia con margen
     var temporizador = null;
 
+    // «Descargar PDF» del tablero puede pedir la hoja de CUALQUIERA de las
+    // facturas del listado, no sólo la del ancla: `?frente=<archivo>` elige cuál.
+    // Sin el parámetro queda la de siempre (`residencial-comun.html`). Sólo se
+    // acepta un nombre de archivo simple dentro de `diseno-factura/` — nada de
+    // `../` ni URLs — para que el parámetro no pueda apuntar a otro origen.
+    (function () {
+      var pedido = new URLSearchParams(location.search).get('frente');
+      if (!pedido || !/^[a-z0-9._-]+\.html$/i.test(pedido)) return;
+      var ruta = 'diseno-factura/' + pedido;
+      var marcoFrente = caraFrente.querySelector('iframe');
+      if (marcoFrente) marcoFrente.setAttribute('src', ruta);
+      var enlaceFrente = document.querySelector('.pie a[href$="residencial-comun.html"]');
+      if (enlaceFrente) enlaceFrente.setAttribute('href', ruta);
+    })();
+
     // La hoja mide 794x1123 fijos (A4 a 96dpi). Cuando la pantalla es más angosta
     // se escala entera, en vez de recortarla o dejar que el iframe scrollee: el
     // alto lo resuelve el aspect-ratio del lienzo, acá sólo va el factor.
