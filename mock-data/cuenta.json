@@ -1,16 +1,16 @@
 {
  "personales": {
-  "nombre_o_razon_social": "CLIENTE DEMO",
+  "nombre_o_razon_social": "SILVEIRA RICARDO JULIO",
   "tipo_documento": "DNI",
   "nro_documento_masked": "****1324",
   "cuit_masked": "********324",
   "email": "titular@example.com"
  },
  "suministro": {
-  "numero": "SRV-000000",
+  "numero": "SRV-336117",
   "estado_servicio": "Activo",
-  "direccion": "Av. Demo 123",
-  "barrio": "Centro",
+  "direccion": "Quilloamira 8080",
+  "barrio": "Villa Allende Parque",
   "localidad": "Cordoba",
   "cp": "5147"
  },
@@ -24,7 +24,7 @@
   "demanda_contratada_kw": 1.0
  },
  "medidor": {
-  "numero": "0000000",
+  "numero": "70102195",
   "marca": null,
   "fase": "Monofásico",
   "inteligente_desde": null,

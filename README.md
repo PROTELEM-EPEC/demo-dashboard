@@ -3,9 +3,11 @@
 Recorrido completo mockeado del tablero (Inicio, Mi Factura, Mi Cuenta), con
 datos reales de consumo y facturación de un cliente real de EPEC.
 
-**El titular, la dirección y los identificadores de cuenta están anonimizados.**
-Los kWh, importes y fechas son reales, tal como salieron del extracto de
-facturación (SIGEC).
+Los kWh, importes, fechas y hojas de factura son reales, tal como salieron del
+extracto de facturación (SIGEC). "Mi Factura" muestra **3 facturas vencidas**:
+el período actual del escenario y los dos anteriores, mostrados como pendientes
+a pedido aunque en el snapshot real ya estén pagados. Al seleccionar una en el
+nivel 2, la versión interactiva de esa misma factura aparece abajo.
 
 Este link entra siempre por el **nivel 1** (la vista pública, sin sesión):
 desde ahí se puede pasar al nivel 2 (el tablero) con el botón de acceso.
