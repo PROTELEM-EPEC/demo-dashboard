@@ -2,17 +2,17 @@
  "personales": {
   "nombre_o_razon_social": "CLIENTE DEMO",
   "tipo_documento": "DNI",
-  "nro_documento_masked": "****8590",
-  "cuit_masked": "********590",
+  "nro_documento_masked": "****1324",
+  "cuit_masked": "********324",
   "email": "titular@example.com"
  },
  "suministro": {
-  "numero": "SRV-0000000",
+  "numero": "SRV-000000",
   "estado_servicio": "Activo",
   "direccion": "Av. Demo 123",
   "barrio": "Centro",
   "localidad": "Cordoba",
-  "cp": "5000"
+  "cp": "5147"
  },
  "tarifa": {
   "codigo": "140",
@@ -21,7 +21,7 @@
   "clase": "1",
   "clase_descripcion": "1 a-b-f Casas de familia",
   "tension": "Baja Tension",
-  "demanda_contratada_kw": 5.0
+  "demanda_contratada_kw": 1.0
  },
  "medidor": {
   "numero": "0000000",

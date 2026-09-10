@@ -1,8 +1,8 @@
 {
-  "source_commit": "5509c76",
+  "source_commit": "e974d59",
   "source_branch": "demo-publica-factura-extra (desde develop @108b476)",
-  "built_at": "2026-09-09T14:10:00Z",
+  "built_at": "2026-09-10T08:20:00Z",
   "base": "./ (relativa)",
   "anonimizado": true,
-  "nota": "Datos de demostracion servidos desde frontend/public/mock-data/, con titular/direccion/identificadores anonimizados via scripts/anonimizar_demo_publica.py. 'Mi Factura' muestra 3 facturas pendientes: la real del suministro principal del escenario (periodo 08/2026) mas dos facturas reales de OTRO suministro real (sus dos ultimos periodos, rotulados con el mismo numero de periodo administrativo que imprime cada hoja) mockeadas como pendientes a pedido explicito -- importe, kWh, fechas y hojas completas son reales, tomados de xxsigec.DOCUMENTOS y generados con tools/traer-factura.py + tools/generar-p4-real.py (rama mr/reglamentacion). Las dos hojas del segundo suministro se sirven con nombre de archivo neutro (factura-anterior-1/2.html) y su identidad anonimizada al mismo placeholder 'CLIENTE DEMO' que el resto de la demo. No es un entorno productivo ni refleja el estado actual de ningun cliente."
+  "nota": "La plataforma completa (Mi Cuenta, Mi Consumo, Mi Factura) muestra un unico cliente real, con identidad y direccion anonimizadas al mismo placeholder 'CLIENTE DEMO' via scripts/anonimizar_demo_publica.py. 'Mi Factura' lista 2 facturas pendientes: el periodo ancla del escenario y el periodo anterior, mockeado como pendiente a pedido explicito aunque en el snapshot real ya este pagado -- importe, kWh, fechas y hojas completas son reales, tomados de xxsigec.DOCUMENTOS y generados con tools/traer-factura.py + tools/generar-p4-real.py (rama mr/reglamentacion). Los 13 periodos del historial tienen fechas de lectura reales, no reconstruidas. No es un entorno productivo ni refleja el estado actual de ningun cliente."
 }
