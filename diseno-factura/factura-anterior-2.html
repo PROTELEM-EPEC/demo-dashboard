@@ -728,6 +728,20 @@ body{margin:0; background:#e9edeb; -webkit-font-smoothing:antialiased;
   border-bottom:1px dotted currentColor}
 .cq-tar > i a:hover{color:var(--verde)}
 @media print{ .cq-tar > i a{border-bottom:0; color:inherit} }
+/* --- demo: compactar liquidación para facturas densas (708751 GD) --- */
+.hoja{gap:3px}
+.hoja .liq{font-size:9px}
+.hoja .liq tbody th,.hoja .liq tbody td{padding:0.3px 5px}
+.hoja .liq thead th{padding-bottom:2px}
+.hoja .liq thead .sub th{padding-bottom:1px}
+.hoja .calc .cab{margin-bottom:2px}
+.hoja .calc .tt{margin-bottom:1px}
+.hoja .barra-neto{margin-top:1px; padding:1px 7px; font-size:10.5px}
+.hoja .barra-tot{padding:3px 10px; font-size:12px}
+/* --- demo: separar el pie del cálculo (facturas densas 708751) --- */
+.hoja{min-height:1123px !important; height:auto !important; overflow:visible !important}
+.hoja .fondo{position:static !important; grid-column:1 / -1 !important; left:auto; right:auto; bottom:auto; margin-top:12px}
+.hoja .calc{margin-bottom:6px}
 </style>
 </head>
 <body>
@@ -806,8 +820,9 @@ body{margin:0; background:#e9edeb; -webkit-font-smoothing:antialiased;
       <div class="vto glosa" data-glosa="vto" tabindex="0">Vence el <b>20 de julio de 2026</b></div>
       <div class="periodo glosa" data-glosa="periodo" tabindex="0"><i>Período facturado</i><b class="m">8 · 2026</b></div>
     </div>
-    <a href="https://pedroberecibar.github.io/mock-plataforma-usuarios-epec/" target="_blank"
-       rel="noopener" title="Abrir tu panel de EPEC"><span class="qr"></span><span class="qr-pie">Escaneá y pagá</span></a>
+    <a href="../?token=DEMO-708751" target="_top"
+
+       title="Abrir tu panel de EPEC"><span class="qr"></span><span class="qr-pie">Escaneá y pagá</span></a>
     <div class="cod">
       <div class="glosa" data-glosa="banelco" tabindex="0"><i>Red Banelco</i><b class="m">0070875101</b></div>
       <div class="glosa" data-glosa="link" tabindex="0"><i>Red Link</i><b class="m">0460070875101</b></div>
