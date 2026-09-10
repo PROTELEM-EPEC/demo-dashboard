@@ -1,7 +1,8 @@
 # Demo — Plataforma de Clientes EPEC
 
 Recorrido completo mockeado del tablero (Inicio, Mi Factura, Mi Cuenta), con
-datos reales de consumo y facturación de un cliente real de EPEC.
+datos reales de consumo y facturación de un cliente real de EPEC — el mismo
+suministro (708751, PERALTA JOAQUIN EMILIANO) que corre en la plataforma real.
 
 Los kWh, importes, fechas y hojas de factura son reales, tal como salieron del
 extracto de facturación (SIGEC). "Mi Factura" muestra **3 facturas vencidas**:

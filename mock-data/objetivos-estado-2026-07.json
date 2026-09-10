@@ -1,21 +1,21 @@
 {
  "objetivo_kwh": 120.0,
- "promedio_vecinos_kwh": 135.8,
+ "promedio_vecinos_kwh": 473.2,
  "n_vecinos": 11,
  "diferencia_pct": -28.57,
- "dias_transcurridos": 28,
- "dias_objetivo_consumidos": 22.6333,
- "texto_dinamico": "bajo_ritmo",
+ "dias_transcurridos": 30,
+ "dias_objetivo_consumidos": 84.5,
+ "texto_dinamico": "sobre_ritmo",
  "excedente_kwh": null,
- "consumo_ultimo_dia_kwh": 3.1,
- "consumo_diario_objetivo_kwh": 4.2857,
- "consumo_acumulado_kwh": 97.0,
- "consumo_promedio_diario_kwh": 3.46,
+ "consumo_ultimo_dia_kwh": 11.98,
+ "consumo_diario_objetivo_kwh": 4.0,
+ "consumo_acumulado_kwh": 338.0,
+ "consumo_promedio_diario_kwh": 11.27,
  "proyeccion": {
   "mes": "2026-06-01",
   "metodo_aplicado": "periodo_cerrado",
   "bandera_confianza": "alta",
-  "rango_inferior_kwh": 97.0,
-  "rango_superior_kwh": 97.0
+  "rango_inferior_kwh": 338.0,
+  "rango_superior_kwh": 338.0
  }
 }

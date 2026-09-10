@@ -1,13 +1,3 @@
 {
- "acontecimientos": [
-  {
-   "fecha": "1990-06-30",
-   "clase": "reconexion",
-   "impacto": "consumo",
-   "titulo": "Se reconectó tu suministro.",
-   "detalle": "El servicio estuvo dado de baja y volvió a conectarse en esta fecha, con un contrato nuevo. Por eso la serie se corta antes y arranca de cero acá: no es un error de medición.",
-   "antes": "Contrato anterior",
-   "ahora": "Contrato vigente"
-  }
- ]
+ "acontecimientos": []
 }

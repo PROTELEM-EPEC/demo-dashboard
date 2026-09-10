@@ -1,443 +1,443 @@
 {
- "2026-06-05": {
-  "fecha": "2026-06-05",
-  "kwh_dia": 3.51,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.91,
-  "n_vecinos": 11
- },
- "2026-06-06": {
-  "fecha": "2026-06-06",
-  "kwh_dia": 3.54,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.96,
-  "n_vecinos": 11
- },
- "2026-06-07": {
-  "fecha": "2026-06-07",
-  "kwh_dia": 4.43,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.2,
-  "n_vecinos": 11
- },
- "2026-06-08": {
-  "fecha": "2026-06-08",
-  "kwh_dia": 3.25,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.55,
-  "n_vecinos": 11
- },
- "2026-06-09": {
-  "fecha": "2026-06-09",
-  "kwh_dia": 3.0,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.2,
-  "n_vecinos": 11
- },
- "2026-06-10": {
-  "fecha": "2026-06-10",
-  "kwh_dia": 3.03,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.24,
-  "n_vecinos": 11
- },
- "2026-06-11": {
-  "fecha": "2026-06-11",
-  "kwh_dia": 3.26,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.56,
-  "n_vecinos": 11
- },
- "2026-06-12": {
-  "fecha": "2026-06-12",
-  "kwh_dia": 3.35,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.69,
-  "n_vecinos": 11
- },
- "2026-06-13": {
-  "fecha": "2026-06-13",
-  "kwh_dia": 3.57,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.0,
-  "n_vecinos": 11
- },
- "2026-06-14": {
-  "fecha": "2026-06-14",
-  "kwh_dia": 4.32,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.05,
-  "n_vecinos": 11
- },
- "2026-06-15": {
-  "fecha": "2026-06-15",
-  "kwh_dia": 3.08,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.31,
-  "n_vecinos": 11
- },
- "2026-06-16": {
-  "fecha": "2026-06-16",
-  "kwh_dia": 3.0,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.2,
-  "n_vecinos": 11
- },
- "2026-06-17": {
-  "fecha": "2026-06-17",
-  "kwh_dia": 2.87,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.02,
-  "n_vecinos": 11
- },
- "2026-06-18": {
-  "fecha": "2026-06-18",
-  "kwh_dia": 3.31,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.63,
-  "n_vecinos": 11
- },
- "2026-06-19": {
-  "fecha": "2026-06-19",
-  "kwh_dia": 2.92,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.09,
-  "n_vecinos": 11
- },
- "2026-06-20": {
-  "fecha": "2026-06-20",
-  "kwh_dia": 4.21,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.89,
-  "n_vecinos": 11
- },
- "2026-06-21": {
-  "fecha": "2026-06-21",
-  "kwh_dia": 3.47,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.86,
-  "n_vecinos": 11
- },
- "2026-06-22": {
-  "fecha": "2026-06-22",
-  "kwh_dia": 3.59,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.03,
-  "n_vecinos": 11
- },
- "2026-06-23": {
-  "fecha": "2026-06-23",
-  "kwh_dia": 3.54,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.96,
-  "n_vecinos": 11
- },
- "2026-06-24": {
-  "fecha": "2026-06-24",
-  "kwh_dia": 3.71,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.19,
-  "n_vecinos": 11
- },
- "2026-06-25": {
-  "fecha": "2026-06-25",
-  "kwh_dia": 3.6,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.04,
-  "n_vecinos": 11
- },
- "2026-06-26": {
-  "fecha": "2026-06-26",
-  "kwh_dia": 3.38,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.73,
-  "n_vecinos": 11
- },
- "2026-06-27": {
-  "fecha": "2026-06-27",
-  "kwh_dia": 4.08,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.71,
-  "n_vecinos": 11
- },
- "2026-06-28": {
-  "fecha": "2026-06-28",
-  "kwh_dia": 3.78,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.29,
-  "n_vecinos": 11
- },
- "2026-06-29": {
-  "fecha": "2026-06-29",
-  "kwh_dia": 3.1,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.34,
-  "n_vecinos": 11
- },
- "2026-06-30": {
-  "fecha": "2026-06-30",
-  "kwh_dia": 3.33,
-  "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.66,
-  "n_vecinos": 11
- },
  "2026-07-01": {
   "fecha": "2026-07-01",
-  "kwh_dia": 3.4,
+  "kwh_dia": 10.55,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.76,
+  "kwh_promedio_zona": 14.77,
   "n_vecinos": 11
  },
  "2026-07-02": {
   "fecha": "2026-07-02",
-  "kwh_dia": 3.32,
+  "kwh_dia": 13.26,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.65,
+  "kwh_promedio_zona": 18.56,
   "n_vecinos": 11
  },
  "2026-07-03": {
   "fecha": "2026-07-03",
-  "kwh_dia": 3.17,
+  "kwh_dia": 12.65,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.44,
+  "kwh_promedio_zona": 17.71,
   "n_vecinos": 11
  },
  "2026-07-04": {
   "fecha": "2026-07-04",
-  "kwh_dia": 4.14,
+  "kwh_dia": 12.72,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.8,
+  "kwh_promedio_zona": 17.81,
   "n_vecinos": 11
  },
  "2026-07-05": {
   "fecha": "2026-07-05",
-  "kwh_dia": 3.82,
+  "kwh_dia": 14.89,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.35,
+  "kwh_promedio_zona": 20.85,
   "n_vecinos": 11
  },
  "2026-07-06": {
   "fecha": "2026-07-06",
-  "kwh_dia": 2.92,
+  "kwh_dia": 10.64,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.09,
+  "kwh_promedio_zona": 14.9,
   "n_vecinos": 11
  },
  "2026-07-07": {
   "fecha": "2026-07-07",
-  "kwh_dia": 3.7,
+  "kwh_dia": 11.34,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.18,
+  "kwh_promedio_zona": 15.88,
   "n_vecinos": 11
  },
  "2026-07-08": {
   "fecha": "2026-07-08",
-  "kwh_dia": 3.99,
+  "kwh_dia": 12.26,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.59,
+  "kwh_promedio_zona": 17.16,
   "n_vecinos": 11
  },
  "2026-07-09": {
   "fecha": "2026-07-09",
-  "kwh_dia": 4.11,
+  "kwh_dia": 12.63,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.75,
+  "kwh_promedio_zona": 17.68,
   "n_vecinos": 11
  },
  "2026-07-10": {
   "fecha": "2026-07-10",
-  "kwh_dia": 4.38,
+  "kwh_dia": 13.46,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.13,
+  "kwh_promedio_zona": 18.84,
   "n_vecinos": 11
  },
  "2026-07-11": {
   "fecha": "2026-07-11",
-  "kwh_dia": 4.81,
+  "kwh_dia": 14.76,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.73,
+  "kwh_promedio_zona": 20.66,
   "n_vecinos": 11
  },
  "2026-07-12": {
   "fecha": "2026-07-12",
-  "kwh_dia": 4.92,
+  "kwh_dia": 15.1,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.89,
+  "kwh_promedio_zona": 21.14,
   "n_vecinos": 11
  },
  "2026-07-13": {
   "fecha": "2026-07-13",
-  "kwh_dia": 3.35,
+  "kwh_dia": 10.28,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.69,
+  "kwh_promedio_zona": 14.39,
   "n_vecinos": 11
  },
  "2026-07-14": {
   "fecha": "2026-07-14",
-  "kwh_dia": 3.62,
+  "kwh_dia": 11.12,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.07,
+  "kwh_promedio_zona": 15.57,
   "n_vecinos": 11
  },
  "2026-07-15": {
   "fecha": "2026-07-15",
-  "kwh_dia": 3.51,
+  "kwh_dia": 10.77,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.91,
+  "kwh_promedio_zona": 15.08,
   "n_vecinos": 11
  },
  "2026-07-16": {
   "fecha": "2026-07-16",
-  "kwh_dia": 3.34,
+  "kwh_dia": 10.26,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.68,
+  "kwh_promedio_zona": 14.36,
   "n_vecinos": 11
  },
  "2026-07-17": {
   "fecha": "2026-07-17",
-  "kwh_dia": 3.8,
+  "kwh_dia": 11.66,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.32,
+  "kwh_promedio_zona": 16.32,
   "n_vecinos": 11
  },
  "2026-07-18": {
   "fecha": "2026-07-18",
-  "kwh_dia": 4.05,
+  "kwh_dia": 12.42,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.67,
+  "kwh_promedio_zona": 17.39,
   "n_vecinos": 11
  },
  "2026-07-19": {
   "fecha": "2026-07-19",
-  "kwh_dia": 4.39,
+  "kwh_dia": 13.47,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.15,
+  "kwh_promedio_zona": 18.86,
   "n_vecinos": 11
  },
  "2026-07-20": {
   "fecha": "2026-07-20",
-  "kwh_dia": 3.62,
+  "kwh_dia": 11.12,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.07,
+  "kwh_promedio_zona": 15.57,
   "n_vecinos": 11
  },
  "2026-07-21": {
   "fecha": "2026-07-21",
-  "kwh_dia": 3.98,
+  "kwh_dia": 12.23,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.57,
+  "kwh_promedio_zona": 17.12,
   "n_vecinos": 11
  },
  "2026-07-22": {
   "fecha": "2026-07-22",
-  "kwh_dia": 4.16,
+  "kwh_dia": 12.76,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.82,
+  "kwh_promedio_zona": 17.86,
   "n_vecinos": 11
  },
  "2026-07-23": {
   "fecha": "2026-07-23",
-  "kwh_dia": 3.53,
+  "kwh_dia": 10.82,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.94,
+  "kwh_promedio_zona": 15.15,
   "n_vecinos": 11
  },
  "2026-07-24": {
   "fecha": "2026-07-24",
-  "kwh_dia": 3.39,
+  "kwh_dia": 10.42,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.75,
+  "kwh_promedio_zona": 14.59,
   "n_vecinos": 11
  },
  "2026-07-25": {
   "fecha": "2026-07-25",
-  "kwh_dia": 4.96,
+  "kwh_dia": 15.23,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 6.94,
+  "kwh_promedio_zona": 21.32,
   "n_vecinos": 11
  },
  "2026-07-26": {
   "fecha": "2026-07-26",
-  "kwh_dia": 4.12,
+  "kwh_dia": 12.65,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.77,
+  "kwh_promedio_zona": 17.71,
   "n_vecinos": 11
  },
  "2026-07-27": {
   "fecha": "2026-07-27",
-  "kwh_dia": 3.9,
+  "kwh_dia": 11.96,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.46,
+  "kwh_promedio_zona": 16.74,
   "n_vecinos": 11
  },
  "2026-07-28": {
   "fecha": "2026-07-28",
-  "kwh_dia": 4.21,
+  "kwh_dia": 12.92,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.89,
+  "kwh_promedio_zona": 18.09,
   "n_vecinos": 11
  },
  "2026-07-29": {
   "fecha": "2026-07-29",
-  "kwh_dia": 3.55,
+  "kwh_dia": 10.88,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.97,
+  "kwh_promedio_zona": 15.23,
   "n_vecinos": 11
  },
  "2026-07-30": {
   "fecha": "2026-07-30",
-  "kwh_dia": 4.23,
+  "kwh_dia": 12.98,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.92,
+  "kwh_promedio_zona": 18.17,
   "n_vecinos": 11
  },
  "2026-07-31": {
   "fecha": "2026-07-31",
-  "kwh_dia": 3.51,
+  "kwh_dia": 10.78,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.91,
+  "kwh_promedio_zona": 15.09,
   "n_vecinos": 11
  },
  "2026-08-01": {
   "fecha": "2026-08-01",
-  "kwh_dia": 4.25,
+  "kwh_dia": 13.06,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.95,
+  "kwh_promedio_zona": 18.28,
   "n_vecinos": 11
  },
  "2026-08-02": {
   "fecha": "2026-08-02",
-  "kwh_dia": 4.23,
+  "kwh_dia": 12.98,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.92,
+  "kwh_promedio_zona": 18.17,
   "n_vecinos": 11
  },
  "2026-08-03": {
   "fecha": "2026-08-03",
-  "kwh_dia": 3.56,
+  "kwh_dia": 10.97,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.98,
+  "kwh_promedio_zona": 15.36,
   "n_vecinos": 11
  },
  "2026-08-04": {
   "fecha": "2026-08-04",
-  "kwh_dia": 3.87,
+  "kwh_dia": 10.46,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.42,
+  "kwh_promedio_zona": 14.64,
   "n_vecinos": 11
  },
  "2026-08-05": {
   "fecha": "2026-08-05",
-  "kwh_dia": 3.38,
+  "kwh_dia": 12.58,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 4.73,
+  "kwh_promedio_zona": 17.61,
   "n_vecinos": 11
  },
  "2026-08-06": {
   "fecha": "2026-08-06",
-  "kwh_dia": 3.58,
+  "kwh_dia": 11.43,
   "kwh_mismo_dia_anio_ant": null,
-  "kwh_promedio_zona": 5.01,
+  "kwh_promedio_zona": 16.0,
+  "n_vecinos": 11
+ },
+ "2026-08-07": {
+  "fecha": "2026-08-07",
+  "kwh_dia": 12.3,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.22,
+  "n_vecinos": 11
+ },
+ "2026-08-08": {
+  "fecha": "2026-08-08",
+  "kwh_dia": 12.84,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.98,
+  "n_vecinos": 11
+ },
+ "2026-08-09": {
+  "fecha": "2026-08-09",
+  "kwh_dia": 14.81,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 20.73,
+  "n_vecinos": 11
+ },
+ "2026-08-10": {
+  "fecha": "2026-08-10",
+  "kwh_dia": 12.6,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.64,
+  "n_vecinos": 11
+ },
+ "2026-08-11": {
+  "fecha": "2026-08-11",
+  "kwh_dia": 12.23,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.12,
+  "n_vecinos": 11
+ },
+ "2026-08-12": {
+  "fecha": "2026-08-12",
+  "kwh_dia": 12.8,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.92,
+  "n_vecinos": 11
+ },
+ "2026-08-13": {
+  "fecha": "2026-08-13",
+  "kwh_dia": 12.07,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 16.9,
+  "n_vecinos": 11
+ },
+ "2026-08-14": {
+  "fecha": "2026-08-14",
+  "kwh_dia": 12.28,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.19,
+  "n_vecinos": 11
+ },
+ "2026-08-15": {
+  "fecha": "2026-08-15",
+  "kwh_dia": 14.29,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 20.01,
+  "n_vecinos": 11
+ },
+ "2026-08-16": {
+  "fecha": "2026-08-16",
+  "kwh_dia": 14.21,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 19.89,
+  "n_vecinos": 11
+ },
+ "2026-08-17": {
+  "fecha": "2026-08-17",
+  "kwh_dia": 10.56,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 14.78,
+  "n_vecinos": 11
+ },
+ "2026-08-18": {
+  "fecha": "2026-08-18",
+  "kwh_dia": 12.57,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.6,
+  "n_vecinos": 11
+ },
+ "2026-08-19": {
+  "fecha": "2026-08-19",
+  "kwh_dia": 11.71,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 16.39,
+  "n_vecinos": 11
+ },
+ "2026-08-20": {
+  "fecha": "2026-08-20",
+  "kwh_dia": 11.22,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 15.71,
+  "n_vecinos": 11
+ },
+ "2026-08-21": {
+  "fecha": "2026-08-21",
+  "kwh_dia": 11.63,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 16.28,
+  "n_vecinos": 11
+ },
+ "2026-08-22": {
+  "fecha": "2026-08-22",
+  "kwh_dia": 14.48,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 20.27,
+  "n_vecinos": 11
+ },
+ "2026-08-23": {
+  "fecha": "2026-08-23",
+  "kwh_dia": 15.0,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 21.0,
+  "n_vecinos": 11
+ },
+ "2026-08-24": {
+  "fecha": "2026-08-24",
+  "kwh_dia": 11.68,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 16.35,
+  "n_vecinos": 11
+ },
+ "2026-08-25": {
+  "fecha": "2026-08-25",
+  "kwh_dia": 9.93,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 13.9,
+  "n_vecinos": 11
+ },
+ "2026-08-26": {
+  "fecha": "2026-08-26",
+  "kwh_dia": 12.37,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.32,
+  "n_vecinos": 11
+ },
+ "2026-08-27": {
+  "fecha": "2026-08-27",
+  "kwh_dia": 9.93,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 13.9,
+  "n_vecinos": 11
+ },
+ "2026-08-28": {
+  "fecha": "2026-08-28",
+  "kwh_dia": 10.69,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 14.97,
+  "n_vecinos": 11
+ },
+ "2026-08-29": {
+  "fecha": "2026-08-29",
+  "kwh_dia": 14.67,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 20.54,
+  "n_vecinos": 11
+ },
+ "2026-08-30": {
+  "fecha": "2026-08-30",
+  "kwh_dia": 12.84,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 17.98,
+  "n_vecinos": 11
+ },
+ "2026-08-31": {
+  "fecha": "2026-08-31",
+  "kwh_dia": 9.71,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 13.59,
+  "n_vecinos": 11
+ },
+ "2026-09-01": {
+  "fecha": "2026-09-01",
+  "kwh_dia": 11.11,
+  "kwh_mismo_dia_anio_ant": null,
+  "kwh_promedio_zona": 15.55,
   "n_vecinos": 11
  }
 }

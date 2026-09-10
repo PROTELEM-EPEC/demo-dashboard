@@ -1,68 +1,68 @@
 {
  "ciclos": [
   {
-   "ciclo": "2025-09",
-   "promedio_kwh_por_dia": 4.25,
-   "n_vecinos": 11
-  },
-  {
    "ciclo": "2025-10",
-   "promedio_kwh_por_dia": 4.49,
+   "promedio_kwh_por_dia": 12.02,
    "n_vecinos": 11
   },
   {
    "ciclo": "2025-11",
-   "promedio_kwh_por_dia": 5.42,
+   "promedio_kwh_por_dia": 10.32,
    "n_vecinos": 11
   },
   {
    "ciclo": "2025-12",
-   "promedio_kwh_por_dia": 6.07,
+   "promedio_kwh_por_dia": 11.99,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-01",
-   "promedio_kwh_por_dia": 7.08,
+   "promedio_kwh_por_dia": 11.15,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-02",
-   "promedio_kwh_por_dia": 8.72,
+   "promedio_kwh_por_dia": 11.54,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-03",
-   "promedio_kwh_por_dia": 7.68,
+   "promedio_kwh_por_dia": 7.72,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-04",
-   "promedio_kwh_por_dia": 7.88,
+   "promedio_kwh_por_dia": 10.5,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-05",
-   "promedio_kwh_por_dia": 7.29,
+   "promedio_kwh_por_dia": 13.32,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-06",
-   "promedio_kwh_por_dia": 5.83,
+   "promedio_kwh_por_dia": 14.92,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-07",
-   "promedio_kwh_por_dia": 4.85,
+   "promedio_kwh_por_dia": 15.77,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-08",
-   "promedio_kwh_por_dia": 4.86,
+   "promedio_kwh_por_dia": 19.12,
    "n_vecinos": 11
   },
   {
    "ciclo": "2026-09",
-   "promedio_kwh_por_dia": 5.51,
+   "promedio_kwh_por_dia": 17.13,
+   "n_vecinos": 11
+  },
+  {
+   "ciclo": "2026-10",
+   "promedio_kwh_por_dia": 17.14,
    "n_vecinos": 11
   }
  ]

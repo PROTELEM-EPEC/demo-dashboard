@@ -1,30 +1,30 @@
 {
  "personales": {
-  "nombre_o_razon_social": "SILVEIRA RICARDO JULIO",
+  "nombre_o_razon_social": "PERALTA JOAQUIN EMILIANO",
   "tipo_documento": "DNI",
-  "nro_documento_masked": "****1324",
-  "cuit_masked": "********324",
+  "nro_documento_masked": "****3718",
+  "cuit_masked": "********718",
   "email": "titular@example.com"
  },
  "suministro": {
-  "numero": "SRV-336117",
+  "numero": "SRV-708751",
   "estado_servicio": "Activo",
-  "direccion": "Quilloamira 8080",
-  "barrio": "Villa Allende Parque",
+  "direccion": "Assunta 9180",
+  "barrio": "V R Indarte",
   "localidad": "Cordoba",
-  "cp": "5147"
+  "cp": "5000"
  },
  "tarifa": {
   "codigo": "140",
   "descripcion": "1.a/f RESIDENCIAL",
   "grupo_tarifario": "T1",
-  "clase": "1",
-  "clase_descripcion": "1 a-b-f Casas de familia",
+  "clase": "9",
+  "clase_descripcion": "Residencial Generador Energia",
   "tension": "Baja Tension",
-  "demanda_contratada_kw": 1.0
+  "demanda_contratada_kw": 5.0
  },
  "medidor": {
-  "numero": "70102195",
+  "numero": "70016848",
   "marca": null,
   "fase": "Monofásico",
   "inteligente_desde": null,

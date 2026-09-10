@@ -1,10 +1,6 @@
 {
- "actual": {
-  "id": "2026-10",
-  "lectura_anterior": "2026-08-03",
-  "lectura_desde": "2026-08-04",
-  "lectura_hasta": "2026-09-01",
-  "dias": 29,
+ "mes_actual": {
+  "mes": "2026-10",
   "serie": [
    {
     "fecha": "2026-08-04",
@@ -123,16 +119,10 @@
     "kwh": 11.11
    }
   ],
-  "total_kwh": 355.0,
-  "kwh_por_dia": 12.24,
-  "total_facturado": true
+  "total_kwh": 355.0
  },
- "anterior": {
-  "id": "2026-09",
-  "lectura_anterior": "2026-06-30",
-  "lectura_desde": "2026-07-01",
-  "lectura_hasta": "2026-08-03",
-  "dias": 34,
+ "mes_anterior": {
+  "mes": "2026-09",
   "serie": [
    {
     "fecha": "2026-07-01",
@@ -271,16 +261,10 @@
     "kwh": 10.97
    }
   ],
-  "total_kwh": 416.0,
-  "kwh_por_dia": 12.24,
-  "total_facturado": true
+  "total_kwh": 416.0
  },
- "interanual": {
-  "id": "2025-10",
-  "lectura_anterior": "2025-08-06",
-  "lectura_desde": "2025-08-07",
-  "lectura_hasta": "2025-09-04",
-  "dias": 29,
+ "mismo_mes_anio_anterior": {
+  "mes": "2025-10",
   "serie": [
    {
     "fecha": "2025-08-07",
@@ -399,15 +383,12 @@
     "kwh": 8.84
    }
   ],
-  "total_kwh": 249.0,
-  "kwh_por_dia": 8.59,
-  "total_facturado": true
+  "total_kwh": 249.0
  },
- "zona": {
-  "promedio_kwh_por_dia": 17.14,
+ "zona_mes_actual": {
+  "promedio_vecinos_kwh": 497.0,
   "n_vecinos": 11,
-  "diferencia_pct": -28.6,
-  "misma_tarifa": true,
+  "diferencia_pct": -28.57,
   "serie": [
    {
     "fecha": "2026-08-04",
@@ -527,13 +508,7 @@
    }
   ]
  },
- "zona_interanual": {
-  "promedio_kwh_por_dia": 12.02,
-  "n_vecinos": 11,
-  "diferencia_pct": -28.6,
-  "misma_tarifa": true
- },
  "datos_hasta": "2026-09-01",
- "vs_anterior_pct": 0.0,
- "vs_interanual_pct": 42.5
+ "vs_mes_anterior_pct": -14.66,
+ "vs_anio_anterior_pct": 42.57
 }
