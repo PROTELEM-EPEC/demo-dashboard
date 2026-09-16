@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Facturas EPEC — galería de rediseños</title>
+<link rel="stylesheet" href="assets/index.css">
+</head>
+<body class="bloqueado">
+
+<div class="candado" id="candado">
+  <form class="candado__caja" id="formulario" autocomplete="off">
+    <h1>Facturas EPEC</h1>
+    <p class="candado__bajada">
+      Galería de rediseños. El contenido está cifrado: hace falta la contraseña
+      para descifrarlo en tu navegador.
+    </p>
+
+    <label class="candado__campo">
+      <span>Contraseña</span>
+      <input type="password" id="clave" name="clave" required autofocus
+             autocomplete="current-password" spellcheck="false">
+    </label>
+
+    <button type="submit" class="candado__boton" id="entrar">Ver las facturas</button>
+
+    <p class="candado__estado" id="estado" role="status" aria-live="polite"></p>
+  </form>
+</div>
+
+<aside class="lateral">
+  <header class="marca">
+    <h1>Facturas EPEC</h1>
+    <p>Galería de rediseños</p>
+  </header>
+  <nav id="nav" aria-label="Listado de diseños"></nav>
+  <footer class="pie">
+    <p><kbd>←</kbd> <kbd>→</kbd> para recorrer las piezas.</p>
+  </footer>
+</aside>
+
+<main class="visor">
+  <div class="barra">
+    <div class="paso">
+      <button type="button" id="anterior" class="boton" title="Anterior (←)" aria-label="Anterior">‹</button>
+      <button type="button" id="siguiente" class="boton" title="Siguiente (→)" aria-label="Siguiente">›</button>
+      <span class="contador" id="contador"></span>
+    </div>
+
+    <div class="rotulo">
+      <strong id="titulo"></strong>
+      <span id="descripcion"></span>
+    </div>
+
+    <div class="herramientas">
+      <div class="zoom" role="group" aria-label="Zoom">
+        <button type="button" id="alejar" class="boton" title="Alejar" aria-label="Alejar">−</button>
+        <button type="button" id="ajustar" class="boton boton--texto" title="Ajustar al ancho">
+          <span id="nivel">100%</span>
+        </button>
+        <button type="button" id="acercar" class="boton" title="Acercar" aria-label="Acercar">+</button>
+      </div>
+      <button type="button" id="cerrar" class="boton boton--texto"
+              title="Bloquear de nuevo y olvidar la contraseña">Bloquear</button>
+    </div>
+  </div>
+
+  <div class="lienzo" id="lienzo">
+    <iframe id="marco" title="Vista de la factura seleccionada"></iframe>
+  </div>
+</main>
+
+<script src="assets/datos.js"></script>
+<script src="assets/visor.js"></script>
+</body>
+</html>
